@@ -1,0 +1,76 @@
+name: Release
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 1 * * *"
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: 'stable'
+          cache-dependency-path: |
+            go.work.sum
+            ip/go.sum
+            site/go.sum
+
+      - name: Build
+        id: build
+        run: |
+          go run ./ip
+          go run ./site
+          echo "tag=$(date +%Y%m%d%H%M)" >> $GITHUB_OUTPUT
+
+      - name: Release RuleSet
+        run: |
+          set -e -o pipefail
+          cd rule-set
+          git init
+          git config --local user.email "github-action@users.noreply.github.com"
+          git config --local user.name "GitHub Action"
+          git remote add origin https://github-action:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git branch -M rule-set
+          git add .
+          git commit -m "update"
+          git push -f origin rule-set
+
+      - name: Checksum
+        run: |
+          sha256sum geoip.db > geoip.db.sha256sum
+          sha256sum geoip-cn.db > geoip-cn.db.sha256sum
+          sha256sum geosite-full.db > geosite-full.db.sha256sum
+          sha256sum geosite-lite.db > geosite-lite.db.sha256sum
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: ${{ steps.build.outputs.tag }}
+          tag_name: ${{ steps.build.outputs.tag }}
+          files: |
+            geoip.db
+            geoip.db.sha256sum
+            geoip.txt
+            geoip-cn.db
+            geoip-cn.db.sha256sum
+            geosite-full.db
+            geosite-full.db.sha256sum
+            geosite-full.txt
+            geosite-lite.db
+            geosite-lite.db.sha256sum
+            geosite-lite.txt
+
+      - name: Prune Release
+        uses: dev-drprasad/delete-older-releases@v0.3.2
+        with:
+          keep_latest: 5
+          delete_tags: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
