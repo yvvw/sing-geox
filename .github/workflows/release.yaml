@@ -25,8 +25,8 @@ jobs:
       - name: Build
         id: build
         run: |
-          go run ./ip/
-          go run ./site/
+          go run -v ./ip
+          go run -v ./site
           echo "tag=$(date +%Y%m%d%H%M)" >> $GITHUB_OUTPUT
 
       - name: Release RuleSet
