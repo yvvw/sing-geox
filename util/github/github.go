@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strings"
 
-	googleGithub "github.com/google/go-github/v45/github"
+	googleGithub "github.com/google/go-github/v58/github"
 	"github.com/sagernet/sing/common"
 	"github.com/sagernet/sing/common/exceptions"
 
@@ -40,7 +40,7 @@ func GetLatestRelease(ctx context.Context, repository string) (*googleGithub.Rep
 	return release, err
 }
 
-func SafeGetReleaseFileBytes(release *googleGithub.RepositoryRelease, fileName string) ([]byte, error) {
+func GetReleaseFile(release *googleGithub.RepositoryRelease, fileName string) ([]byte, error) {
 	asset := common.Find(release.Assets, func(it *googleGithub.ReleaseAsset) bool {
 		return *it.Name == fileName
 	})

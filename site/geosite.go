@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/google/go-github/v45/github"
+	"github.com/google/go-github/v58/github"
 	"github.com/sagernet/sing-box/common/geosite"
 	"github.com/sagernet/sing-box/common/srs"
 	"github.com/sagernet/sing-box/constant"
@@ -39,28 +39,30 @@ func main() {
 		logrus.Fatal(err)
 	}
 
-	err = generateGeoSite(fullRelease, fullInput, fullOutput, "rule-set")
+	err = generate(fullRelease, fullInput, fullOutput, "rule-set")
 	if err != nil {
 		logrus.Fatal(err)
 	}
-	err = generateGeoSite(liteRelease, liteInput, liteOutput, "")
+	err = generate(liteRelease, liteInput, liteOutput, "")
 	if err != nil {
 		logrus.Fatal(err)
 	}
 }
 
-func generateGeoSite(release *github.RepositoryRelease, inputFileName string, outputFileName string, ruleSetDir string) (err error) {
-	data, err := myGithub.SafeGetReleaseFileBytes(release, inputFileName)
+func generate(release *github.RepositoryRelease, inputFileName string, outputFileName string, ruleSetDir string) (err error) {
+	data, err := myGithub.GetReleaseFile(release, inputFileName)
 	if err != nil {
 		return err
 	}
 
 	siteMap, err := parseGeoSite(data)
+	filterBadCode(siteMap)
+	mergeCNSites(siteMap)
 	if err != nil {
 		return err
 	}
 
-	err = writeGeoSite(siteMap, outputFileName+".db")
+	err = writeSite(siteMap, outputFileName+".db")
 	if err != nil {
 		return err
 	}
@@ -88,30 +90,29 @@ func parseGeoSite(data []byte) (siteMap map[string][]geosite.Item, err error) {
 
 	siteMap = make(map[string][]geosite.Item)
 
-	for _, entry := range list.Entry {
-		code := strings.ToLower(entry.CountryCode)
-		domains := make([]geosite.Item, 0, len(entry.Domain)*2)
+	for _, item := range list.Entry {
+		code := strings.ToLower(item.CountryCode)
+		domains := make([]geosite.Item, 0, len(item.Domain)*2)
 		attributeMap := make(map[string][]*routercommon.Domain)
-		for _, domain := range entry.Domain {
+		for _, domain := range item.Domain {
 			if len(domain.Attribute) > 0 {
 				for _, attribute := range domain.Attribute {
 					attributeMap[attribute.Key] = append(attributeMap[attribute.Key], domain)
 				}
 			}
-			items := domain2item(domain)
-			for _, item := range items {
-				domains = append(domains, item)
+			sites := domain2site(domain)
+			for _, site := range sites {
+				domains = append(domains, site)
 			}
 		}
 
 		siteMap[code] = common.Uniq(domains)
-
 		for attribute, attributeEntries := range attributeMap {
 			attributeDomains := make([]geosite.Item, 0, len(attributeEntries)*2)
 			for _, domain := range attributeEntries {
-				items := domain2item(domain)
-				for _, item := range items {
-					attributeDomains = append(attributeDomains, item)
+				sites := domain2site(domain)
+				for _, site := range sites {
+					attributeDomains = append(attributeDomains, site)
 				}
 			}
 			siteMap[code+"@"+attribute] = common.Uniq(attributeDomains)
@@ -120,7 +121,7 @@ func parseGeoSite(data []byte) (siteMap map[string][]geosite.Item, err error) {
 	return siteMap, nil
 }
 
-func domain2item(domain *routercommon.Domain) (items []geosite.Item) {
+func domain2site(domain *routercommon.Domain) (items []geosite.Item) {
 	switch domain.Type {
 	case routercommon.Domain_Plain:
 		items = append(items, geosite.Item{
@@ -152,7 +153,114 @@ func domain2item(domain *routercommon.Domain) (items []geosite.Item) {
 	return items
 }
 
-func writeGeoSite(siteMap map[string][]geosite.Item, fileName string) (err error) {
+type badCode struct {
+	code    string
+	badCode string
+}
+
+func filterBadCode(siteMap map[string][]geosite.Item) {
+	var codeList []string
+	for code := range siteMap {
+		codeList = append(codeList, code)
+	}
+	var badCodeList []badCode
+
+	var filteredCodeList []string
+	for _, code := range codeList {
+		codeParts := strings.Split(code, "@")
+		if len(codeParts) != 2 {
+			continue
+		}
+		leftParts := strings.Split(codeParts[0], "-")
+		var lastName string
+		if len(leftParts) > 1 {
+			lastName = leftParts[len(leftParts)-1]
+		}
+		if lastName == "" {
+			lastName = codeParts[0]
+		}
+		if lastName == codeParts[1] {
+			delete(siteMap, code)
+			filteredCodeList = append(filteredCodeList, code)
+			continue
+		}
+		if "!"+lastName == codeParts[1] {
+			badCodeList = append(badCodeList, badCode{
+				code:    codeParts[0],
+				badCode: code,
+			})
+		} else if lastName == "!"+codeParts[1] {
+			badCodeList = append(badCodeList, badCode{
+				code:    codeParts[0],
+				badCode: code,
+			})
+		}
+	}
+
+	var mergedCodeList []string
+	for _, it := range badCodeList {
+		badList := siteMap[it.badCode]
+		if badList == nil {
+			panic("bad list not found: " + it.badCode)
+		}
+		delete(siteMap, it.badCode)
+		newMap := make(map[geosite.Item]bool)
+		for _, item := range siteMap[it.code] {
+			newMap[item] = true
+		}
+		for _, item := range badList {
+			delete(newMap, item)
+		}
+		newList := make([]geosite.Item, 0, len(newMap))
+		for item := range newMap {
+			newList = append(newList, item)
+		}
+		siteMap[it.code] = newList
+		mergedCodeList = append(mergedCodeList, it.badCode)
+	}
+}
+
+func mergeCNSites(siteMap map[string][]geosite.Item) {
+	var codeList []string
+	for code := range siteMap {
+		codeList = append(codeList, code)
+	}
+
+	var cnCodeList []string
+	for _, code := range codeList {
+		codeParts := strings.Split(code, "@")
+		if len(codeParts) != 2 {
+			continue
+		}
+		if codeParts[1] != "cn" {
+			continue
+		}
+		if !strings.HasPrefix(codeParts[0], "category-") {
+			continue
+		}
+		if strings.HasSuffix(codeParts[0], "-cn") || strings.HasSuffix(codeParts[0], "-!cn") {
+			continue
+		}
+		cnCodeList = append(cnCodeList, code)
+	}
+
+	newCNMap := make(map[geosite.Item]bool)
+	for _, site := range siteMap["cn"] {
+		newCNMap[site] = true
+	}
+	for _, code := range cnCodeList {
+		for _, site := range siteMap[code] {
+			newCNMap[site] = true
+		}
+	}
+	newCNSites := make([]geosite.Item, 0, len(newCNMap))
+	for site := range newCNMap {
+		newCNSites = append(newCNSites, site)
+	}
+	siteMap["cn"] = newCNSites
+}
+
+func writeSite(siteMap map[string][]geosite.Item, fileName string) (err error) {
 	file, err := os.Create(fileName)
 	if err != nil {
 		return err
@@ -174,8 +282,8 @@ func writeSiteText(siteMap map[string][]geosite.Item, fileName string) error {
 	defer file.Close()
 
 	var siteNames []string
-	for siteName := range siteMap {
-		siteNames = append(siteNames, siteName)
+	for name := range siteMap {
+		siteNames = append(siteNames, name)
 	}
 	sort.Strings(siteNames)
 
@@ -189,9 +297,9 @@ func writeRuleSet(siteMap map[string][]geosite.Item, ruleSetPath string) (err er
 		return err
 	}
 
-	for code, domains := range siteMap {
+	for code, sites := range siteMap {
 		filePath, _ := filepath.Abs(filepath.Join(ruleSetPath, "geosite-"+code))
-		err := writeRuleSetItem(domains, filePath)
+		err := writeRuleSetItem(sites, filePath)
 		if err != nil {
 			return err
 		}
@@ -199,8 +307,8 @@ func writeRuleSet(siteMap map[string][]geosite.Item, ruleSetPath string) (err er
 	return err
 }
 
-func writeRuleSetItem(domains []geosite.Item, filePath string) (err error) {
-	defaultRule := geosite.Compile(domains)
+func writeRuleSetItem(sites []geosite.Item, filePath string) (err error) {
+	defaultRule := geosite.Compile(sites)
 
 	var rule option.DefaultHeadlessRule
 	rule.Domain = defaultRule.Domain
@@ -234,7 +342,7 @@ func writeRuleSetItem(domains []geosite.Item, filePath string) (err error) {
 	defer txtFile.Close()
 
 	siteTxt := ""
-	for _, domain := range domains {
+	for _, domain := range sites {
 		siteTxt += domain.Value + "\n"
 	}
 

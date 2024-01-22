@@ -8,7 +8,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/google/go-github/v45/github"
+	"github.com/google/go-github/v58/github"
 	"github.com/maxmind/mmdbwriter"
 	"github.com/maxmind/mmdbwriter/inserter"
 	"github.com/maxmind/mmdbwriter/mmdbtype"
@@ -28,19 +28,19 @@ func main() {
 	output := "geoip"
 	outputCN := "geoip-cn"
 
-	repoRelease, err := myGithub.GetLatestRelease(context.Background(), repo)
+	release, err := myGithub.GetLatestRelease(context.Background(), repo)
 	if err != nil {
 		logrus.Fatal(err)
 	}
 
-	err = generateGeoIp(repoRelease, input, output, outputCN, "rule-set")
+	err = generate(release, input, output, outputCN, "rule-set")
 	if err != nil {
 		logrus.Fatal(err)
 	}
 }
 
-func generateGeoIp(release *github.RepositoryRelease, inputFileName string, outputFileName string, outputCNFileName string, ruleSetDir string) error {
-	data, err := myGithub.SafeGetReleaseFileBytes(release, inputFileName)
+func generate(release *github.RepositoryRelease, inputFileName string, outputFileName string, outputCNFileName string, ruleSetDir string) error {
+	data, err := myGithub.GetReleaseFile(release, inputFileName)
 	if err != nil {
 		return err
 	}
@@ -50,7 +50,7 @@ func generateGeoIp(release *github.RepositoryRelease, inputFileName string, outp
 		return err
 	}
 
-	err = writeGeoIp(metadata, ipMap, outputFileName+".db", outputCNFileName+".db")
+	err = writeIp(metadata, ipMap, outputFileName+".db", outputCNFileName+".db")
 	if err != nil {
 		return err
 	}
@@ -104,13 +104,13 @@ func parseGeoIp(data []byte) (metadata maxminddb.Metadata, ipMap map[string][]*n
 	return
 }
 
-func writeGeoIp(metadata maxminddb.Metadata, ipMap map[string][]*net.IPNet, fileName string, cnFileName string) (err error) {
-	writeIpData(metadata, ipMap, nil, fileName)
+func writeIp(metadata maxminddb.Metadata, ipMap map[string][]*net.IPNet, fileName string, cnFileName string) (err error) {
+	err = writeIpData(metadata, ipMap, nil, fileName)
 	if err != nil {
 		return err
 	}
 
-	writeIpData(metadata, ipMap, []string{"cn"}, cnFileName)
+	err = writeIpData(metadata, ipMap, []string{"cn"}, cnFileName)
 	if err != nil {
 		return err
 	}
@@ -149,8 +149,8 @@ func writeIpData(metadata maxminddb.Metadata, ipMap map[string][]*net.IPNet, cod
 		if !codeMap[code] {
 			continue
 		}
-		for _, ipNet := range ipNets {
-			err := writer.Insert(ipNet, mmdbtype.String(code))
+		for _, ip := range ipNets {
+			err := writer.Insert(ip, mmdbtype.String(code))
 			if err != nil {
 				return err
 			}
@@ -175,8 +175,8 @@ func writeIpText(ipMap map[string][]*net.IPNet, fileName string) error {
 	defer file.Close()
 
 	var ipNames []string
-	for ipName := range ipMap {
-		ipNames = append(ipNames, ipName)
+	for name := range ipMap {
+		ipNames = append(ipNames, name)
 	}
 	sort.Strings(ipNames)
 
