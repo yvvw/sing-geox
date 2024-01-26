@@ -19,14 +19,14 @@ jobs:
           go-version: 'stable'
           cache-dependency-path: |
             go.work.sum
-            ip/go.sum
-            site/go.sum
+            geoip/go.sum
+            geosite/go.sum
 
       - name: Build
         id: build
         run: |
-          go run -v ./ip
-          go run -v ./site
+          go run -v ./geoip
+          go run -v ./geosite
           echo "tag=$(date +%Y%m%d%H%M)" >> $GITHUB_OUTPUT
 
       - name: Release RuleSet
