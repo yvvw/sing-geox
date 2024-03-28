@@ -1,0 +1,4 @@
+amazon-adsystem.com
+.amazon-adsystem.com
+serving-sys.com
+.serving-sys.com

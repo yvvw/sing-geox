@@ -1,0 +1,4 @@
+liberapay.com
+.liberapay.com
+liberapay.org
+.liberapay.org

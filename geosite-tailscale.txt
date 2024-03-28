@@ -1,0 +1,6 @@
+tailscale.com
+.tailscale.com
+tailscale.io
+.tailscale.io
+ts.net
+.ts.net

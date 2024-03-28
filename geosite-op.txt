@@ -1,0 +1,3 @@
+opgg-static.akamaized.net
+op.gg
+.op.gg

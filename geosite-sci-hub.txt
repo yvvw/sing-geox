@@ -1,0 +1,12 @@
+sci-hub.se
+.sci-hub.se
+sci-hub.ee
+.sci-hub.ee
+sci-hub.st
+.sci-hub.st
+sci-hub.it.nf
+.sci-hub.it.nf
+sci-hub.mksa.top
+.sci-hub.mksa.top
+sci.hubg.org
+.sci.hubg.org

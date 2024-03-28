@@ -1,0 +1,6 @@
+banned.video
+.banned.video
+infowars.com
+.infowars.com
+infowarsmedia.com
+.infowarsmedia.com

@@ -1,0 +1,4 @@
+localbitcoins.com
+.localbitcoins.com
+localbitcoinschain.com
+.localbitcoinschain.com

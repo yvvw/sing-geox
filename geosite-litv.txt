@@ -1,0 +1,4 @@
+litv.tv
+.litv.tv
+litvfreepc.akamaized.net
+.litvfreepc.akamaized.net

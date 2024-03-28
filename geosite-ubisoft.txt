@@ -1,0 +1,12 @@
+ubisoft-uplay-savegames.s3.amazonaws.com
+ubisoft-orbit-savegames.s3.amazonaws.com
+ubistatic3-a.akamaihd.net
+ubi.com
+.ubi.com
+ubisoft.com
+.ubisoft.com
+ubisoftconnect.com
+.ubisoftconnect.com
+uplay.com
+.uplay.com
+uplaypc-s-ubisoft.cdn.ubi.com

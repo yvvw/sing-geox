@@ -1,0 +1,10 @@
+perl.org
+.perl.org
+cpan.org
+.cpan.org
+metacpan.org
+.metacpan.org
+modperl.pl
+.modperl.pl
+perl.apache.org
+.perl.apache.org

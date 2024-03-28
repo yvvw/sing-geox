@@ -1,0 +1,2 @@
+leanplum.com
+.leanplum.com

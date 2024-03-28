@@ -1,0 +1,4 @@
+fontawesome.com
+.fontawesome.com
+fortawesome.com
+.fortawesome.com

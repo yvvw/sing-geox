@@ -1,0 +1,4 @@
+firefox.com
+.firefox.com
+firefoxusercontent.com
+.firefoxusercontent.com

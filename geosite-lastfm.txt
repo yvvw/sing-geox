@@ -1,0 +1,3 @@
+lastfm.freetls.fastly.net
+last.fm
+.last.fm

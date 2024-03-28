@@ -1,0 +1,8 @@
+qwant.com
+.qwant.com
+qwant.de
+.qwant.de
+qwant.fr
+.qwant.fr
+qwant.it
+.qwant.it

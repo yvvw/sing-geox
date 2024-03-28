@@ -1,0 +1,3 @@
+okaapps.com
+.okaapps.com
+^(.+\.)*zh\.okaapps\.com$

@@ -1,0 +1,4 @@
+mongodb.com
+.mongodb.com
+mongodb.org
+.mongodb.org

@@ -1,0 +1,8 @@
+dcard.cc
+.dcard.cc
+dcard.io
+.dcard.io
+dcard.link
+.dcard.link
+dcard.tw
+.dcard.tw

@@ -1,0 +1,4 @@
+nordstrom.com
+.nordstrom.com
+nordstrommedia.com
+.nordstrommedia.com

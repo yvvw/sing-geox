@@ -1,0 +1,10 @@
+clarivate.com
+.clarivate.com
+webofknowledge.com
+.webofknowledge.com
+webofscience.com
+.webofscience.com
+newisiknowledge.com
+.newisiknowledge.com
+isiknowledge.com
+.isiknowledge.com

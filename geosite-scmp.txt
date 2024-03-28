@@ -1,0 +1,4 @@
+scmp.com
+.scmp.com
+i-scmp.com
+.i-scmp.com

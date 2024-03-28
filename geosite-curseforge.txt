@@ -1,0 +1,4 @@
+curseforge.com
+.curseforge.com
+forgecdn.net
+.forgecdn.net

@@ -1,0 +1,14 @@
+blogjava.net
+.blogjava.net
+cnblogs.com
+.cnblogs.com
+cnitblog.com
+.cnitblog.com
+cnweblog.com
+.cnweblog.com
+cppblog.com
+.cppblog.com
+phpweblog.net
+.phpweblog.net
+teachblog.net
+.teachblog.net

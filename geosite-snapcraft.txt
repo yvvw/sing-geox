@@ -1,0 +1,4 @@
+snapcraft.io
+.snapcraft.io
+snapstore.io
+.snapstore.io

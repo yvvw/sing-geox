@@ -1,0 +1,12 @@
+reddit.com
+.reddit.com
+redditstatic.com
+.redditstatic.com
+redditmail.com
+.redditmail.com
+redditmedia.com
+.redditmedia.com
+redd.it
+.redd.it
+reddit.app.link
+.reddit.app.link

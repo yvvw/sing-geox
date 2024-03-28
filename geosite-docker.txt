@@ -1,0 +1,6 @@
+compose-spec.io
+.compose-spec.io
+docker.com
+.docker.com
+docker.io
+.docker.io

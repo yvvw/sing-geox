@@ -1,0 +1,17 @@
+mdn.mozillademos.org
+mdn.dev
+.mdn.dev
+mdnplay.dev
+.mdnplay.dev
+mdnyalp.dev
+.mdnyalp.dev
+developer.allizom.org
+.developer.allizom.org
+developer.mozilla.org
+.developer.mozilla.org
+mdn.allizom.net
+.mdn.allizom.net
+mdn.mozilla.net
+.mdn.mozilla.net
+mdn.mozit.cloud
+.mdn.mozit.cloud

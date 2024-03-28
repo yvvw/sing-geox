@@ -1,0 +1,8 @@
+hetzner.cloud
+.hetzner.cloud
+hetzner.com
+.hetzner.com
+hetzner.de
+.hetzner.de
+your-server.de
+.your-server.de

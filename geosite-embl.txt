@@ -1,0 +1,14 @@
+embl-hamburg.de
+.embl-hamburg.de
+embl.de
+.embl.de
+embl.fr
+.embl.fr
+embl.it
+.embl.it
+embl.org
+.embl.org
+emblstatic.net
+.emblstatic.net
+ebi.ac.uk
+.ebi.ac.uk

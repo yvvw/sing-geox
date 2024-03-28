@@ -1,0 +1,5 @@
+cavporn.com
+.cavporn.com
+cavporn.github.io
+.cavporn.github.io
+(^|\.)cav1(0[2-9]|1[0-9])\.com$

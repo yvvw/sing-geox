@@ -1,0 +1,8 @@
+digitalocean.com
+.digitalocean.com
+digitaloceanspaces.com
+.digitaloceanspaces.com
+do.co
+.do.co
+nginxconfig.io
+.nginxconfig.io

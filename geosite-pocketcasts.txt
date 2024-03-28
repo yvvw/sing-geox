@@ -1,0 +1,4 @@
+pca.st
+.pca.st
+pocketcasts.com
+.pocketcasts.com

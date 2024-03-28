@@ -1,0 +1,8 @@
+go2map.com
+.go2map.com
+sogo.com
+.sogo.com
+sogou.com
+.sogou.com
+sogoucdn.com
+.sogoucdn.com

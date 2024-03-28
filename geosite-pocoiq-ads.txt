@@ -1,0 +1,4 @@
+cdn.pocoiq.cn
+.cdn.pocoiq.cn
+oct.pocoiq.cn
+.oct.pocoiq.cn
