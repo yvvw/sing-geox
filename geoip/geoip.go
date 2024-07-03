@@ -8,7 +8,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/google/go-github/v58/github"
+	"github.com/google/go-github/v62/github"
 	"github.com/maxmind/mmdbwriter"
 	"github.com/maxmind/mmdbwriter/inserter"
 	"github.com/maxmind/mmdbwriter/mmdbtype"
@@ -19,7 +19,7 @@ import (
 	"github.com/sagernet/sing-box/option"
 	"github.com/sirupsen/logrus"
 
-	myGithub "sing-geox/util/github"
+	myGithub "github.com/sing-geox/util/github"
 )
 
 func main() {

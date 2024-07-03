@@ -1,4 +1,6 @@
 .idea/
 /rule-set/
-/geosite-*.db
-/geoip-*.db
+/geosite*.db
+/geosite*.txt
+/geoip*.db
+/geoip*.txt

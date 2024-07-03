@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/google/go-github/v58/github"
+	"github.com/google/go-github/v62/github"
 	"github.com/sagernet/sing-box/common/geosite"
 	"github.com/sagernet/sing-box/common/srs"
 	"github.com/sagernet/sing-box/constant"
@@ -17,7 +17,7 @@ import (
 	"github.com/v2fly/v2ray-core/v5/app/router/routercommon"
 	"google.golang.org/protobuf/proto"
 
-	myGithub "sing-geox/util/github"
+	myGithub "github.com/sing-geox/util/github"
 )
 
 func main() {

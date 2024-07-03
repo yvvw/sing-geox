@@ -1,10 +1,10 @@
-module sing-geox/util
+module github.com/sing-geox/util
 
-go 1.21
+go 1.22
 
 require (
-	github.com/google/go-github/v58 v58.0.0
-	github.com/sagernet/sing v0.3.0
+	github.com/google/go-github/v62 v62.0.0
+	github.com/sagernet/sing v0.4.1
 )
 
 require github.com/google/go-querystring v1.1.0 // indirect

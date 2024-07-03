@@ -1,25 +1,29 @@
-module sing-geox/site
+module github.com/sing-geox/geosite
 
-go 1.21
+go 1.22
+
+replace github.com/sing-geox/util => ../util
 
 require (
-	github.com/google/go-github/v58 v58.0.0
-	github.com/sagernet/sing v0.3.0
-	github.com/sagernet/sing-box v1.8.2
+	github.com/google/go-github/v62 v62.0.0
+	github.com/sagernet/sing v0.4.1
+	github.com/sagernet/sing-box v1.9.3
+	github.com/sing-geox/util v0.0.0-00010101000000-000000000000
 	github.com/sirupsen/logrus v1.9.3
-	github.com/v2fly/v2ray-core/v5 v5.13.0
-	google.golang.org/protobuf v1.32.0
+	github.com/v2fly/v2ray-core/v5 v5.16.1
+	google.golang.org/protobuf v1.34.2
 )
 
 require (
 	github.com/adrg/xdg v0.4.0 // indirect
-	github.com/golang/protobuf v1.5.3 // indirect
+	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/google/go-querystring v1.1.0 // indirect
-	github.com/miekg/dns v1.1.57 // indirect
-	github.com/sagernet/sing-dns v0.1.12 // indirect
+	github.com/miekg/dns v1.1.61 // indirect
+	github.com/sagernet/sing-dns v0.2.0 // indirect
 	go4.org/netipx v0.0.0-20231129151722-fdeea329fbba // indirect
-	golang.org/x/mod v0.14.0 // indirect
-	golang.org/x/net v0.20.0 // indirect
-	golang.org/x/sys v0.16.0 // indirect
-	golang.org/x/tools v0.16.0 // indirect
+	golang.org/x/mod v0.18.0 // indirect
+	golang.org/x/net v0.26.0 // indirect
+	golang.org/x/sync v0.7.0 // indirect
+	golang.org/x/sys v0.21.0 // indirect
+	golang.org/x/tools v0.22.0 // indirect
 )

@@ -7,12 +7,12 @@ import (
 	"net/http"
 	"strings"
 
-	googleGithub "github.com/google/go-github/v58/github"
+	googleGithub "github.com/google/go-github/v62/github"
 	"github.com/sagernet/sing/common"
 	"github.com/sagernet/sing/common/exceptions"
 
-	"sing-geox/util/env"
-	myHttp "sing-geox/util/http"
+	"github.com/sing-geox/util/env"
+	myHttp "github.com/sing-geox/util/http"
 )
 
 var client *googleGithub.Client
