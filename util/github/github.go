@@ -11,8 +11,8 @@ import (
 	"github.com/sagernet/sing/common"
 	"github.com/sagernet/sing/common/exceptions"
 
-	"github.com/sing-geox/util/env"
-	myHttp "github.com/sing-geox/util/http"
+	"github.com/yvvw/sing-geox/util/env"
+	myHttp "github.com/yvvw/sing-geox/util/http"
 )
 
 var client *googleGithub.Client

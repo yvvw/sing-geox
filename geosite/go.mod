@@ -1,16 +1,16 @@
-module github.com/sing-geox/geosite
+module github.com/yvvw/sing-geox/geosite
 
 go 1.22
 
-replace github.com/sing-geox/util => ../util
+replace github.com/yvvw/sing-geox/util => ../util
 
 require (
 	github.com/google/go-github/v62 v62.0.0
 	github.com/sagernet/sing v0.4.1
 	github.com/sagernet/sing-box v1.9.3
-	github.com/sing-geox/util v0.0.0-00010101000000-000000000000
 	github.com/sirupsen/logrus v1.9.3
 	github.com/v2fly/v2ray-core/v5 v5.16.1
+	github.com/yvvw/sing-geox/util v0.0.0-20240703175641-2fc2dfedf947
 	google.golang.org/protobuf v1.34.2
 )
 

@@ -1,4 +1,4 @@
-module github.com/sing-geox/util
+module github.com/yvvw/sing-geox/util
 
 go 1.22
 

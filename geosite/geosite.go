@@ -17,7 +17,7 @@ import (
 	"github.com/v2fly/v2ray-core/v5/app/router/routercommon"
 	"google.golang.org/protobuf/proto"
 
-	myGithub "github.com/sing-geox/util/github"
+	myGithub "github.com/yvvw/sing-geox/util/github"
 )
 
 func main() {

@@ -19,7 +19,7 @@ import (
 	"github.com/sagernet/sing-box/option"
 	"github.com/sirupsen/logrus"
 
-	myGithub "github.com/sing-geox/util/github"
+	myGithub "github.com/yvvw/sing-geox/util/github"
 )
 
 func main() {
