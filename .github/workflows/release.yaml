@@ -68,9 +68,9 @@ jobs:
             geosite-lite.txt
 
       - name: Prune Release
-        uses: sgpublic/delete-release-action@v1.1
+        uses: dev-drprasad/delete-older-releases@v0.3.4
         with:
-          release-drop: true
-          release-keep-count: 4
+          keep_latest: 4
+          delete_tags: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
