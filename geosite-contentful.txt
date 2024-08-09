@@ -1,0 +1,4 @@
+contentful.com
+.contentful.com
+ctfassets.net
+.ctfassets.net

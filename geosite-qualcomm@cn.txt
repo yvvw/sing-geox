@@ -1,0 +1,12 @@
+gpsonextra.net
+.gpsonextra.net
+izatcloud.net
+.izatcloud.net
+qceventscenter.com.cn
+.qceventscenter.com.cn
+qualcomm.cn
+.qualcomm.cn
+qualcomm.cn.cdn.cloudflare.net
+.qualcomm.cn.cdn.cloudflare.net
+xtracloud.cn
+.xtracloud.cn

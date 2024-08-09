@@ -1,0 +1,4 @@
+cnki.net
+.cnki.net
+cnki.com.cn
+.cnki.com.cn

@@ -1,0 +1,4 @@
+mlog.hiido.com
+.mlog.hiido.com
+ylog.hiido.com
+.ylog.hiido.com

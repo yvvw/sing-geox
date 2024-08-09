@@ -1,0 +1,6 @@
+razerapi.com
+.razerapi.com
+razersynapse.com
+.razersynapse.com
+razerzone.com
+.razerzone.com

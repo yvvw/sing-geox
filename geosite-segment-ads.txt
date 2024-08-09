@@ -1,0 +1,2 @@
+cdn.segment.com
+.cdn.segment.com

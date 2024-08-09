@@ -1,0 +1,6 @@
+bsky.app
+.bsky.app
+bsky.network
+.bsky.network
+bsky.social
+.bsky.social

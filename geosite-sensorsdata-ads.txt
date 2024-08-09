@@ -1,0 +1,2 @@
+static.sensorsdata.cn
+.static.sensorsdata.cn

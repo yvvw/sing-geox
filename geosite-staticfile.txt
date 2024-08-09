@@ -1,0 +1,4 @@
+staticfile.net
+.staticfile.net
+staticfile.org
+.staticfile.org

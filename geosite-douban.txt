@@ -1,0 +1,6 @@
+douban.com
+.douban.com
+douban.fm
+.douban.fm
+doubanio.com
+.doubanio.com

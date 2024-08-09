@@ -1,0 +1,13 @@
+.cern
+ams02.space
+.ams02.space
+cern.ch
+.cern.ch
+cixp.net
+.cixp.net
+dotcernpilot.info
+.dotcernpilot.info
+ippog.org
+.ippog.org
+linearcollider.org
+.linearcollider.org

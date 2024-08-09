@@ -1,0 +1,4 @@
+ruby-lang.org
+.ruby-lang.org
+rubygems.org
+.rubygems.org

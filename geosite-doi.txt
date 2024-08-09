@@ -1,0 +1,4 @@
+doi.org
+.doi.org
+doi.info
+.doi.info

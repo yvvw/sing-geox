@@ -1,0 +1,12 @@
+fastly.com
+.fastly.com
+fastly.net
+.fastly.net
+fastlylabs.com
+.fastlylabs.com
+fastlylb.net
+.fastlylb.net
+fastly-terrarium.com
+.fastly-terrarium.com
+zencdn.net
+.zencdn.net

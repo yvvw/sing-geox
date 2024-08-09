@@ -1,0 +1,4 @@
+redis.io
+.redis.io
+redislabs.com
+.redislabs.com

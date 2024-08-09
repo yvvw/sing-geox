@@ -1,0 +1,4 @@
+fastlane.ci
+.fastlane.ci
+fastlane.tools
+.fastlane.tools

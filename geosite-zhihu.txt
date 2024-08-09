@@ -1,0 +1,4 @@
+zhihu.com
+.zhihu.com
+zhimg.com
+.zhimg.com

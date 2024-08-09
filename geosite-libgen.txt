@@ -1,0 +1,16 @@
+libgen.life
+.libgen.life
+libgen.fun
+.libgen.fun
+library.lol
+.library.lol
+libgen.is
+.libgen.is
+libgen.me
+.libgen.me
+libgen.rs
+.libgen.rs
+libgen.st
+.libgen.st
+gen.lib.rus.ec
+.gen.lib.rus.ec

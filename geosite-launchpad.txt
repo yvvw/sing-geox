@@ -1,0 +1,10 @@
+launchpad.net
+.launchpad.net
+launchpadcontent.net
+.launchpadcontent.net
+launchpadlibrarian.com
+.launchpadlibrarian.com
+launchpadlibrarian.net
+.launchpadlibrarian.net
+launchpadlibrarian.org
+.launchpadlibrarian.org

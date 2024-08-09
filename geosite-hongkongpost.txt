@@ -1,0 +1,4 @@
+hongkongpost.gov.hk
+.hongkongpost.gov.hk
+ecert.gov.hk
+.ecert.gov.hk

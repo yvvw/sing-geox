@@ -1,0 +1,8 @@
+ubuntu.com
+.ubuntu.com
+ubuntu.net
+.ubuntu.net
+ubuntuforums.org
+.ubuntuforums.org
+ubuntu-touch.io
+.ubuntu-touch.io

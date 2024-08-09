@@ -1,0 +1,8 @@
+managedpki.com
+.managedpki.com
+symantec.com
+.symantec.com
+symcb.com
+.symcb.com
+symcd.com
+.symcd.com

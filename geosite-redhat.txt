@@ -1,0 +1,4 @@
+redhat.com
+.redhat.com
+redhat.org
+.redhat.org

@@ -1,0 +1,10 @@
+getfedora.org
+.getfedora.org
+fedoraforum.org
+.fedoraforum.org
+fedorapeople.org
+.fedorapeople.org
+fedoraproject.org
+.fedoraproject.org
+fedoramagazine.org
+.fedoramagazine.org

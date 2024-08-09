@@ -1,0 +1,4 @@
+edx.org
+.edx.org
+edx-cdn.org
+.edx-cdn.org

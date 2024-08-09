@@ -1,0 +1,4 @@
+typekit.com
+.typekit.com
+typekit.net
+.typekit.net

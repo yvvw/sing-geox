@@ -1,0 +1,11 @@
+hotstar.com
+.hotstar.com
+hotstar-cdn.net
+.hotstar-cdn.net
+hotstar-labs.com
+.hotstar-labs.com
+hotstarext.com
+.hotstarext.com
+hsprepack.akamaized.net
+.hsprepack.akamaized.net
+^hses[1-7]?\.akamaized\.net$

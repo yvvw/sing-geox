@@ -1,0 +1,6 @@
+farfetch.cn
+.farfetch.cn
+farfetch.com.cn
+.farfetch.com.cn
+farfetch.net.cn
+.farfetch.net.cn

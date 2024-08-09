@@ -1,0 +1,8 @@
+chinanews.com
+.chinanews.com
+ecns.cn
+.ecns.cn
+chinanews.com.cn
+.chinanews.com.cn
+cns.com.cn
+.cns.com.cn

@@ -1,0 +1,4 @@
+omaps.app
+.omaps.app
+organicmaps.app
+.organicmaps.app

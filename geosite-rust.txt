@@ -1,0 +1,8 @@
+rust-lang.org
+.rust-lang.org
+rustup.rs
+.rustup.rs
+crates.io
+.crates.io
+docs.rs
+.docs.rs

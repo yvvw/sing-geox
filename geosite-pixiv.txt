@@ -1,0 +1,16 @@
+booth.pm
+.booth.pm
+fanbox.cc
+.fanbox.cc
+pixiv.net
+.pixiv.net
+pixiv.org
+.pixiv.org
+pixiv.me
+.pixiv.me
+pximg.net
+.pximg.net
+pixiv.co.jp
+.pixiv.co.jp
+ads-pixiv.net
+.ads-pixiv.net

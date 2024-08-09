@@ -1,0 +1,4 @@
+shimo.im
+.shimo.im
+yuque.com
+.yuque.com

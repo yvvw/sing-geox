@@ -1,0 +1,10 @@
+amp.akamaized.net
+amp.dev
+.amp.dev
+ampproject.com
+.ampproject.com
+ampproject.net
+.ampproject.net
+ampproject.org
+.ampproject.org
+cdn.ampproject.org

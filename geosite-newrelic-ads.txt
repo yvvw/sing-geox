@@ -1,0 +1,2 @@
+js-agent.newrelic.com
+.js-agent.newrelic.com

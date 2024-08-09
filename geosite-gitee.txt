@@ -1,0 +1,4 @@
+gitee.com
+.gitee.com
+gitee.io
+.gitee.io

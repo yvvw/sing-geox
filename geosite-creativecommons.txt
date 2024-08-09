@@ -1,0 +1,8 @@
+ccstatic.org
+.ccstatic.org
+creativecommons.org
+.creativecommons.org
+creativecommons.engineering
+.creativecommons.engineering
+licensebuttons.net
+.licensebuttons.net

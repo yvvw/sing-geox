@@ -1,0 +1,8 @@
+nexon.com
+.nexon.com
+nexon.io
+.nexon.io
+nexon.co.jp
+.nexon.co.jp
+nexoncdn.co.kr
+.nexoncdn.co.kr

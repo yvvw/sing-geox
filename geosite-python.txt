@@ -1,0 +1,12 @@
+pycon.org
+.pycon.org
+pypa.io
+.pypa.io
+pypi.io
+.pypi.io
+pypi.org
+.pypi.org
+python.org
+.python.org
+pythonhosted.org
+.pythonhosted.org

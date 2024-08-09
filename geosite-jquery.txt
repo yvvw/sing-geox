@@ -1,0 +1,6 @@
+jquery.com
+.jquery.com
+jquerymobile.com
+.jquerymobile.com
+jqueryui.com
+.jqueryui.com

@@ -1,0 +1,8 @@
+hecdn.net
+.hecdn.net
+heweather.net
+.heweather.net
+qweather.com
+.qweather.com
+qweather.net
+.qweather.net
