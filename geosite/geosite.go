@@ -293,8 +293,6 @@ func writeSiteText(siteMap map[string][]geosite.Item, fileName string) error {
 }
 
 func writeRuleSet(siteMap map[string][]geosite.Item, ruleSetPath string) (err error) {
-	_ = os.RemoveAll(ruleSetPath)
-
 	err = os.MkdirAll(ruleSetPath, 0o755)
 	if err != nil {
 		return err

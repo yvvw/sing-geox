@@ -185,8 +185,6 @@ func writeIpText(ipMap map[string][]*net.IPNet, fileName string) error {
 }
 
 func writeRuleSet(ipMap map[string][]*net.IPNet, ruleSetPath string) (err error) {
-	_ = os.RemoveAll(ruleSetPath)
-
 	err = os.MkdirAll(ruleSetPath, 0o755)
 	if err != nil {
 		return err
