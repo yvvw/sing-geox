@@ -245,7 +245,7 @@ func mergeCNSites(siteMap map[string][]geosite.Item) {
 	}
 
 	newCNMap := make(map[geosite.Item]bool)
-	for _, site := range siteMap["cn"] {
+	for _, site := range siteMap["geolocation-cn"] {
 		newCNMap[site] = true
 	}
 	for _, code := range cnCodeList {
@@ -257,7 +257,7 @@ func mergeCNSites(siteMap map[string][]geosite.Item) {
 	for site := range newCNMap {
 		newCNSites = append(newCNSites, site)
 	}
-	siteMap["cn"] = newCNSites
+	siteMap["geolocation-cn"] = newCNSites
 }
 
 func writeSite(siteMap map[string][]geosite.Item, fileName string) (err error) {
@@ -271,6 +271,7 @@ func writeSite(siteMap map[string][]geosite.Item, fileName string) (err error) {
 	if err != nil {
 		return err
 	}
+
 	return err
 }
 
@@ -292,6 +293,8 @@ func writeSiteText(siteMap map[string][]geosite.Item, fileName string) error {
 }
 
 func writeRuleSet(siteMap map[string][]geosite.Item, ruleSetPath string) (err error) {
+	_ = os.RemoveAll(ruleSetPath)
+
 	err = os.MkdirAll(ruleSetPath, 0o755)
 	if err != nil {
 		return err
