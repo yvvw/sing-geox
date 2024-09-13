@@ -25,8 +25,8 @@ jobs:
       - name: Build
         id: build
         run: |
-          go run -v ./geoip
-          go run -v ./geosite
+          go run -v cmd/geoip
+          go run -v cmd/geosite
           echo "tag=$(date +%Y%m%d%H%M)" >> $GITHUB_OUTPUT
 
       - name: Release RuleSet

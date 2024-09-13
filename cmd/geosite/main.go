@@ -243,6 +243,18 @@ func mergeCNSites(siteMap map[string][]geosite.Item) {
 		}
 		cnCodeList = append(cnCodeList, code)
 	}
+	for _, code := range codeList {
+		if !strings.HasPrefix(code, "category-") {
+			continue
+		}
+		if !strings.HasSuffix(code, "-cn") {
+			continue
+		}
+		if strings.Contains(code, "@") {
+			continue
+		}
+		cnCodeList = append(cnCodeList, code)
+	}
 
 	newCNMap := make(map[geosite.Item]bool)
 	for _, site := range siteMap["geolocation-cn"] {
@@ -258,6 +270,10 @@ func mergeCNSites(siteMap map[string][]geosite.Item) {
 		newCNSites = append(newCNSites, site)
 	}
 	siteMap["geolocation-cn"] = newCNSites
+	siteMap["cn"] = append(newCNSites, geosite.Item{
+		Type:  geosite.RuleTypeDomainSuffix,
+		Value: "cn",
+	})
 }
 
 func writeSite(siteMap map[string][]geosite.Item, fileName string) (err error) {
