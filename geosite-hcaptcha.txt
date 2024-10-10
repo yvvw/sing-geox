@@ -1,0 +1,6 @@
+botstop.com
+.botstop.com
+hcaptcha.com
+.hcaptcha.com
+hcaptchastatus.com
+.hcaptchastatus.com

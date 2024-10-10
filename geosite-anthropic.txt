@@ -1,0 +1,7 @@
+servd-anthropic-website.b-cdn.net
+anthropic.com
+.anthropic.com
+claude.ai
+.claude.ai
+claudeusercontent.com
+.claudeusercontent.com

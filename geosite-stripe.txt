@@ -1,0 +1,10 @@
+link.com
+.link.com
+stripe-terminal-local-reader.net
+.stripe-terminal-local-reader.net
+stripe.com
+.stripe.com
+stripe.network
+.stripe.network
+stripecdn.com
+.stripecdn.com

@@ -1,0 +1,6 @@
+bisq.io
+.bisq.io
+bisq.network
+.bisq.network
+bitsquare.io
+.bitsquare.io

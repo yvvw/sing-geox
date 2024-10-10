@@ -1,0 +1,8 @@
+zb.app
+.zb.app
+zb.com
+.zb.com
+zb.io
+.zb.io
+zb.live
+.zb.live

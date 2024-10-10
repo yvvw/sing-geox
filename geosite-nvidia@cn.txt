@@ -1,0 +1,6 @@
+geforce.cn
+.geforce.cn
+gputechconf.cn
+.gputechconf.cn
+nvidia.cn
+.nvidia.cn

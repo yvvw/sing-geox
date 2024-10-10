@@ -1,0 +1,6 @@
+sohu.com
+.sohu.com
+sohucs.com
+.sohucs.com
+itc.cn
+.itc.cn

@@ -1,0 +1,6 @@
+oschina.net
+.oschina.net
+gitee.com
+.gitee.com
+gitee.io
+.gitee.io

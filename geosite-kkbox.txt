@@ -1,0 +1,14 @@
+kfs.io
+.kfs.io
+kk.stream
+.kk.stream
+kkbox.com
+.kkbox.com
+kktix.com
+.kktix.com
+kktv.me
+.kktv.me
+kkbox.com.tw
+.kkbox.com.tw
+kktv.com.tw
+.kktv.com.tw

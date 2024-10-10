@@ -1,0 +1,14 @@
+atlassian.com
+.atlassian.com
+atlassian.net
+.atlassian.net
+bitbucket.io
+.bitbucket.io
+bitbucket.org
+.bitbucket.org
+statuspage.io
+.statuspage.io
+trello.com
+.trello.com
+trellocdn.com
+.trellocdn.com

@@ -1,0 +1,8 @@
+alog.umeng.com
+.alog.umeng.com
+alog.umengcloud.com
+.alog.umengcloud.com
+w.cnzz.com
+.w.cnzz.com
+z.gds.cnzz.com
+.z.gds.cnzz.com

@@ -1,0 +1,8 @@
+devcon.org
+.devcon.org
+ethereum.foundation
+.ethereum.foundation
+ethereum.org
+.ethereum.org
+etherscan.io
+.etherscan.io

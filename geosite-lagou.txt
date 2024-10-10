@@ -1,0 +1,4 @@
+lagou.com
+.lagou.com
+lgstatic.com
+.lgstatic.com

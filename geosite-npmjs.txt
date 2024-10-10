@@ -1,0 +1,6 @@
+npm.community
+.npm.community
+npmjs.com
+.npmjs.com
+npmjs.org
+.npmjs.org

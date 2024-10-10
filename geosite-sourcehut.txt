@@ -1,0 +1,4 @@
+sourcehut.org
+.sourcehut.org
+sr.ht
+.sr.ht

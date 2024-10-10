@@ -1,0 +1,6 @@
+quip-cdn.com
+.quip-cdn.com
+quip.com
+.quip.com
+quipelements.com
+.quipelements.com

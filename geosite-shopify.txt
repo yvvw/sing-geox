@@ -1,0 +1,16 @@
+myshopify.com
+.myshopify.com
+shop.app
+.shop.app
+shopify.com
+.shopify.com
+shopify.dev
+.shopify.dev
+shopifycdn.com
+.shopifycdn.com
+shopifycloud.com
+.shopifycloud.com
+shopifystatus.com
+.shopifystatus.com
+shopifysvc.com
+.shopifysvc.com

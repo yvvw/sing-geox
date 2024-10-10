@@ -1,0 +1,14 @@
+asktug.com
+.asktug.com
+pingcap.cn
+.pingcap.cn
+pingcap.com
+.pingcap.com
+tidb.ai
+.tidb.ai
+tidb.net
+.tidb.net
+tidbcloud.com
+.tidbcloud.com
+tikv.org
+.tikv.org

@@ -1,0 +1,12 @@
+nikkei.com
+.nikkei.com
+nikkei.jp
+.nikkei.jp
+nikkei4946.com
+.nikkei4946.com
+nikkei-cnbc.co.jp
+.nikkei-cnbc.co.jp
+nikkei.co.jp
+.nikkei.co.jp
+nikkeibp.co.jp
+.nikkeibp.co.jp

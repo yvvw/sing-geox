@@ -1,0 +1,6 @@
+tidal.com
+.tidal.com
+tidalhifi.com
+.tidalhifi.com
+wimpmusic.com
+.wimpmusic.com

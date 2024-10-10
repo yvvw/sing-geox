@@ -1,0 +1,10 @@
+qr.ae
+.qr.ae
+quora.com
+.quora.com
+quoracdn.net
+.quoracdn.net
+poe.com
+.poe.com
+poecdn.net
+.poecdn.net

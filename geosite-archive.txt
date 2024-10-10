@@ -1,0 +1,14 @@
+archive-it.org
+.archive-it.org
+archive.org
+.archive.org
+archive.ph
+.archive.ph
+archive.today
+.archive.today
+openlibrary.org
+.openlibrary.org
+4pcdn.org
+.4pcdn.org
+4plebs.org
+.4plebs.org

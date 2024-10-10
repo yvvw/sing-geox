@@ -1,0 +1,12 @@
+nikke-de.com
+.nikke-de.com
+nikke-en.com
+.nikke-en.com
+nikke-fr.com
+.nikke-fr.com
+nikke-jp.com
+.nikke-jp.com
+nikke-kr.com
+.nikke-kr.com
+nikke-sea.com
+.nikke-sea.com

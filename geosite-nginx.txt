@@ -1,0 +1,4 @@
+nginx.com
+.nginx.com
+nginx.org
+.nginx.org

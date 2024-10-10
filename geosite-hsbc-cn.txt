@@ -1,0 +1,6 @@
+hsbc.com.cn
+.hsbc.com.cn
+hsbcqh.com.cn
+.hsbcqh.com.cn
+hsbcinsurance.com.cn
+.hsbcinsurance.com.cn

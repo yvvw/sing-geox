@@ -1,0 +1,11 @@
+hetzner.cloud
+.hetzner.cloud
+hetzner.com
+.hetzner.com
+hetzner.company
+.hetzner.company
+hetzner.de
+.hetzner.de
+your-server.de
+.your-server.de
+sentry.hetzner.company

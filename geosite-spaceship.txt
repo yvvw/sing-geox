@@ -1,0 +1,4 @@
+spaceship.com
+.spaceship.com
+spacemail.com
+.spacemail.com

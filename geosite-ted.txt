@@ -1,0 +1,4 @@
+ted.com
+.ted.com
+tedcdn.com
+.tedcdn.com

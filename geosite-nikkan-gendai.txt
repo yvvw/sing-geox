@@ -1,0 +1,4 @@
+gendai.net
+.gendai.net
+nikkan-gendai.com
+.nikkan-gendai.com

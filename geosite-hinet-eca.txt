@@ -1,0 +1,4 @@
+eca.hinet.net
+.eca.hinet.net
+gtlsca.nat.gov.tw
+.gtlsca.nat.gov.tw

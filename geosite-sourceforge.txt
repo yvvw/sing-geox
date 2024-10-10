@@ -1,0 +1,8 @@
+sourceforge.com
+.sourceforge.com
+sourceforge.net
+.sourceforge.net
+sf.net
+.sf.net
+fsdn.com
+.fsdn.com

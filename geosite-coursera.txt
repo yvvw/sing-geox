@@ -1,0 +1,8 @@
+coursera-for-business.org
+.coursera-for-business.org
+coursera.community
+.coursera.community
+coursera.help
+.coursera.help
+coursera.org
+.coursera.org

@@ -1,0 +1,4 @@
+playcover.io
+.playcover.io
+playcover.workers.dev
+.playcover.workers.dev

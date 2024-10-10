@@ -1,0 +1,4 @@
+grazie.ai
+.grazie.ai
+grazie.aws.intellij.net
+.grazie.aws.intellij.net

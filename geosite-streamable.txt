@@ -1,0 +1,4 @@
+embed-cdn.com
+.embed-cdn.com
+streamable.com
+.streamable.com

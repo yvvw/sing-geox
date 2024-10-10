@@ -1,0 +1,4 @@
+cdn.jetbrains.com
+.cdn.jetbrains.com
+download-cdn.jetbrains.com.cn
+.download-cdn.jetbrains.com.cn

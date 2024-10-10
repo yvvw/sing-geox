@@ -1,0 +1,8 @@
+alibaba.ir
+.alibaba.ir
+flightio.com
+.flightio.com
+mrbilit.com
+.mrbilit.com
+tapsi.ir
+.tapsi.ir

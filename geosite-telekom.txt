@@ -1,0 +1,6 @@
+telekom.com
+.telekom.com
+telekom.de
+.telekom.de
+telesec.de
+.telesec.de

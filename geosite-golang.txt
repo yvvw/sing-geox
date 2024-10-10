@@ -1,0 +1,16 @@
+go-lang.com
+.go-lang.com
+go-lang.net
+.go-lang.net
+go-lang.org
+.go-lang.org
+go.dev
+.go.dev
+godoc.org
+.godoc.org
+golang.com
+.golang.com
+golang.net
+.golang.net
+golang.org
+.golang.org

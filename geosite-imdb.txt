@@ -1,0 +1,9 @@
+.imdb
+boxofficemojo.com
+.boxofficemojo.com
+imdb.com
+.imdb.com
+imdb.to
+.imdb.to
+media-imdb.com
+.media-imdb.com

@@ -1,0 +1,4 @@
+bootcdn.cn
+.bootcdn.cn
+bootcdn.net
+.bootcdn.net

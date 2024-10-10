@@ -1,0 +1,4 @@
+imgix.com
+.imgix.com
+imgix.net
+.imgix.net

@@ -1,0 +1,10 @@
+gannett-cdn.com
+.gannett-cdn.com
+gannett.com
+.gannett.com
+gannettdigital.com
+.gannettdigital.com
+usatoday.com
+.usatoday.com
+usatodaynetworkservice.com
+.usatodaynetworkservice.com

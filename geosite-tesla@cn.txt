@@ -1,0 +1,9 @@
+tesla.cn
+.tesla.cn
+tesla.com.cn
+.tesla.com.cn
+teslamotors.cn
+.teslamotors.cn
+teslamotors.com.cn
+.teslamotors.com.cn
+tesla-cdn.thron.cn

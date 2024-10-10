@@ -1,0 +1,10 @@
+pm.me
+.pm.me
+proton.me
+.proton.me
+protonmail.ch
+.protonmail.ch
+protonmail.com
+.protonmail.com
+protonstatus.com
+.protonstatus.com

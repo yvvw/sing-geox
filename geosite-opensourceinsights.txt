@@ -1,0 +1,8 @@
+deps.dev
+.deps.dev
+deps.info
+.deps.info
+opensourceinsight.dev
+.opensourceinsight.dev
+opensourceinsights.dev
+.opensourceinsights.dev

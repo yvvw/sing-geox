@@ -1,0 +1,8 @@
+reut.rs
+.reut.rs
+reuters.com
+.reuters.com
+reuters.tv
+.reuters.tv
+reutersmedia.net
+.reutersmedia.net

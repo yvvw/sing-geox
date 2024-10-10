@@ -1,0 +1,14 @@
+arewereadyyet.com
+.arewereadyyet.com
+element.io
+.element.io
+matrix.org
+.matrix.org
+matrix.to
+.matrix.to
+modular.im
+.modular.im
+riot.im
+.riot.im
+vector.im
+.vector.im

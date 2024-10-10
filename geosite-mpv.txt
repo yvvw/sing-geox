@@ -1,0 +1,2 @@
+mpv.io
+.mpv.io

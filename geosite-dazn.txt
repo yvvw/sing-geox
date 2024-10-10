@@ -1,0 +1,10 @@
+dazn-api.com
+.dazn-api.com
+dazn.com
+.dazn.com
+dazndn.com
+.dazndn.com
+indazn.com
+.indazn.com
+indaznlab.com
+.indaznlab.com

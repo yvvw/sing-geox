@@ -1,0 +1,4 @@
+trello.com
+.trello.com
+trellocdn.com
+.trellocdn.com

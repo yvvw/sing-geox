@@ -1,0 +1,10 @@
+apress.com
+.apress.com
+springer.com
+.springer.com
+springerlink.com
+.springerlink.com
+springernature.com
+.springernature.com
+wkap.nl
+.wkap.nl

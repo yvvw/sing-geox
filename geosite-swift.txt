@@ -1,0 +1,8 @@
+appleswift.com
+.appleswift.com
+swift.org
+.swift.org
+swiftui.cn
+.swiftui.cn
+swiftui.com.cn
+.swiftui.com.cn

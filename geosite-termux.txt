@@ -1,0 +1,6 @@
+termux.com
+.termux.com
+termux.dev
+.termux.dev
+termux.org
+.termux.org

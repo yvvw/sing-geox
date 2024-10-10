@@ -1,0 +1,8 @@
+graph.whatsapp.com
+.graph.whatsapp.com
+graph.whatsapp.net
+.graph.whatsapp.net
+graph.instagram.com
+.graph.instagram.com
+graph-fallback.instagram.com
+.graph-fallback.instagram.com

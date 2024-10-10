@@ -1,0 +1,7 @@
+d29vzk4ow07wi7.cloudfront.net
+jfrog.com
+.jfrog.com
+jfrog.org
+.jfrog.org
+bintray.com
+.bintray.com

@@ -1,0 +1,4 @@
+qt.io
+.qt.io
+qt-project.org
+.qt-project.org

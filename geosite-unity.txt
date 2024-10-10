@@ -1,0 +1,16 @@
+unity.com
+.unity.com
+unity3d.com
+.unity3d.com
+ads.unitychina.cn
+.ads.unitychina.cn
+splash-ads.cdn.unity.cn
+.splash-ads.cdn.unity.cn
+splash-ads.unitychina.cn
+.splash-ads.unitychina.cn
+unityads.unity.cn
+.unityads.unity.cn
+unityads.unity3d.com
+.unityads.unity3d.com
+unityads.unitychina.cn
+.unityads.unitychina.cn

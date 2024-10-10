@@ -1,0 +1,10 @@
+cygames.jp
+.cygames.jp
+worldflipper.jp
+.worldflipper.jp
+cygames.co.jp
+.cygames.co.jp
+worldflipper.akamaized.net
+.worldflipper.akamaized.net
+umamusume.akamaized.net
+.umamusume.akamaized.net

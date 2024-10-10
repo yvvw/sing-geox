@@ -1,0 +1,4 @@
+khanacademy.org
+.khanacademy.org
+kastatic.org
+.kastatic.org

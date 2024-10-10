@@ -1,0 +1,14 @@
+client-teamviewer-com.trafficmanager.net
+teamviewer.com.cdn.cloudflare.net
+anydesk.com
+.anydesk.com
+nomachine.com
+.nomachine.com
+rustdesk.com
+.rustdesk.com
+teamviewer.com
+.teamviewer.com
+teamviewer.us
+.teamviewer.us
+teamviewer.cn
+.teamviewer.cn

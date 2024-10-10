@@ -1,0 +1,4 @@
+gitbook.com
+.gitbook.com
+gitbook.io
+.gitbook.io

@@ -1,0 +1,12 @@
+deepin.cn
+.deepin.cn
+deepin.com
+.deepin.com
+deepin.io
+.deepin.io
+deepin.org
+.deepin.org
+chinauos.com
+.chinauos.com
+uniontech.com
+.uniontech.com

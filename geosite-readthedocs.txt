@@ -1,0 +1,8 @@
+readthedocs-hosted.com
+.readthedocs-hosted.com
+readthedocs.com
+.readthedocs.com
+readthedocs.io
+.readthedocs.io
+readthedocs.org
+.readthedocs.org

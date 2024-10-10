@@ -1,0 +1,16 @@
+consul.io
+.consul.io
+hashicorp.com
+.hashicorp.com
+nomadproject.io
+.nomadproject.io
+packer.io
+.packer.io
+terraform.io
+.terraform.io
+vagrantcloud.com
+.vagrantcloud.com
+vagrantup.com
+.vagrantup.com
+vaultproject.io
+.vaultproject.io
